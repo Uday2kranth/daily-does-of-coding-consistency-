@@ -16,7 +16,7 @@ x_train=scaler.fit_transform(x_train)
 x_test=scaler.transform(x_test) 
 
 #initializing knn classifier model 
-knn= KNeighborsClassifier(n_neighbors=3)
+knn= KNeighborsClassifier(n_neighbors=3,algorithm="kd_tree")
 #train the model 
 knn.fit(x_train,y_train)
 
