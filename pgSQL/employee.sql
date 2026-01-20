@@ -9,6 +9,6 @@ insert into employee( id , first_name ,last_name) values ( 2, 'GaganKranthi', 'Y
 (4,'SaiRam','s'),
 (6,'Akash','D'),
 (5,'Tharun','Bodula'),
-(7,'BhanuPrakash','G');
+(6,'BhanuPrakash','G');
 
 select * from employee;
