@@ -1,0 +1,55 @@
+-- Create table
+create table employee_sales
+    (emp_id varchar(10),
+     emp_name varchar(50),
+     mobile_no bigint,
+     hours_work int,
+     bones_got int,
+     ot smallint);
+
+select * from employee_sales;
+
+-- Rename column bones_got to bonus_got
+alter table employee_sales
+rename column bones_got to bonus_got;
+
+select * from employee_sales;
+
+-- Add new column sales
+alter table employee_sales
+add column sales int;
+
+select * from employee_sales;
+
+-- Rename column sales to sale_count
+alter table employee_sales
+rename column sales to sale_count;
+
+select * from employee_sales;
+
+-- Ingestion or insertion of rows
+insert into employee_sales
+    (emp_id, emp_name, mobile_no, hours_work,
+     bonus_got, ot, sale_count)
+values
+    ('empo1','sai kiran(remo)',9012034050,56,15000,16,80),
+    ('emp02','sai kiran(atagadu',0939439492,56,10000,10,60);
+
+select * from employee_sales;
+
+-- Update the row in the table
+update employee_sales
+set emp_name = 'kiran (atagadu)'
+where emp_name = 'sai kiran(atagadu';
+
+select * from employee_sales;
+
+-- Delete all the rows without deleting the entire table itself
+truncate employee_sales;
+
+select * from employee_sales;
+
+-- Remove the whole table when needed
+drop table employee_sales;
+
+select * from employee_sales;
