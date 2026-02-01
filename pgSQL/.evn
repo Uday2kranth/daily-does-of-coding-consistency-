@@ -1,5 +1,8 @@
 DB_USER= postgres
-DB_PASSWORD = Password
+DB_PASSWORD = Superm@n62
 DB_NAME = demoDB
 DB_HOST = localhost
 DB_PORT = 5432
+
+DATABASE_URL=postgresql://postgres:Superm%40n62@localhost:5432/demoDB
+

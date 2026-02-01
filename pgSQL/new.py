@@ -13,8 +13,8 @@ conn= psycopg2.connect(
 	port=os.getenv("DB_PORT")
 )
 
-print("DB_USER:", os.getenv("DB_USER"))
-print("DB_PASSWORD:")
+# print("DB_USER:", os.getenv("DB_USER"))
+# print("DB_PASSWORD:")
 cursor = conn.cursor()
 
 update_query="""update employee set id =%s where first_name=%s"""
@@ -24,5 +24,6 @@ cursor.execute("SELECT  * FROM  employee")
 
 data = cursor.fetchall()
 for d in data:
-    print(d)
+    print(f"\n[{d}]\n")
+print(data)
 conn.close()
